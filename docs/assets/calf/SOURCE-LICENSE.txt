@@ -1,0 +1,25 @@
+SOURCE / PERMISSION / LIMITED VALIDATION
+Retrieved 2026-10-27 for local technical research.
+Prepared for a public personal software demo on 2026-10-29 after checking the official public-domain source and copyright notice. Attribution and non-endorsement text remain visible in the demo.
+Title on official source: Explosive Calf Raise
+Creator: Capt. Matthew Holfinger, U.S. Marine Corps Training and Education Command.
+Date taken: 2018-08-07; Video ID 636502; VIRIN 181031-M-JT909-006.
+Source page: https://www.dvidshub.net/video/636502/explosive-calf-raise
+Public embed: https://www.dvidshub.net/video/embed/636502
+Public MP4 source explicitly present in embed HTML:
+https://d34w7g4gy10iej.cloudfront.net/video/1810/DOD_106170127/DOD_106170127-1024x576-1769k.mp4
+License: The official source labels the work PUBLIC DOMAIN, subject to DVIDS copyright restrictions:
+https://www.dvidshub.net/about/copyright
+No login, protected download endpoint, paid media, or access-control bypass used. The public playback MP4 returned HTTP 200.
+Attribution: Explosive Calf Raise, Capt. Matthew Holfinger / U.S. Marine Corps Training and Education Command, via DVIDS, public domain.
+Required non-endorsement notice from current DVIDS copyright page:
+The appearance of U.S. Department of War (DoW) visual information does not imply or constitute DoW endorsement.
+No endorsement or medical efficacy claimed. Publicity/privacy/trademark restrictions still apply. Do not redistribute automatically with a commercial product.
+
+Media caveats:
+The original is an approximately 11-second split-screen with side and oblique views of the same person; counting it as one physical person is not supported by the detector. The top view was cropped with ffmpeg crop=518:282:269:6, removing the lower view and black margins, with no spatial upscale. Side selected: left, according to visible near-side anatomy; no independent anatomical annotation exists.
+The official title says Explosive Calf Raise, while the in-video caption says Explosive Calf Stretch. Therefore this is a candidate lower-leg-motion technical test, not a verified standard slow calf-raise benchmark or a rehabilitation prescription.
+Original source.mp4, derived top-view.mp4, and frame-2sec.jpg retained locally. Model results and overlay are in result/. Do not represent this person as a product user or any output as clinical validation.
+
+Local real inference result: duration=11.879s; 95 samples; 21 valid; coverage=0.2211; quality=unusable; repCount=null. Reasons: {'支撑脚位置或画面尺度变化过大，不能可靠计数': 74}. Actual runtime metadata: {'pose': 'RTMPose-M COCO-WholeBody 133', 'detector': 'RTMDet-nano person', 'device': 'cpu', 'poseSha256': '3da02694cd6479d3b333ff42ebd0723f96bfa06adac1db1e2e815ed2e9e1b02d', 'detectorSha256': '05d8511e7b3fabc62e27d2f624179e004ad14ee63a86ca9d9d22c88f3db0eee1', 'mmposeVersion': '1.3.2', 'inputSha256': '6a18250aca7b5c835ce0d7c5e2c5f94caa69cf16dbb1901b4558caba18218baf', 'inputWidth': 518, 'inputHeight': 282, 'elapsedSeconds': 11.263, 'sampling': '8 fps offline; maximum 1280px; not real-time measurement', 'ruleVersion': 'heel-candidate-0.1', 'clinicalValidation': False}.
+This is an unsuccessful candidate-count validation, retained as a documented boundary case. No algorithm changes made. Need an independently annotated, steady close side-view normal heel-raise sample for positive real-world validation. The crop command does not upscale; the engine may resize input for inference.

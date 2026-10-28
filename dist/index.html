@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light"><meta name="description" content="Dee 脚踝恢复实验室：连接训练记录、视觉观察与人工复核的本地产品原型。">
+<title>Dee · 脚踝恢复实验室</title><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/physitrack.css?v=20261028-real-1">
+</head>
+<body>
+<a class="skip-link" href="#main">跳到主要内容</a>
+<div class="site-announcement"><span>DEMO</span><p>从个人康复经验出发，连接训练记录、动作观察与人工反馈。</p><button data-action="demo-guide">查看演示路线 <span aria-hidden="true">↗</span></button></div>
+<header class="site-header">
+<div class="site-nav">
+<a href="#overview" class="site-brand" aria-label="Dee 脚踝恢复实验室首页"><svg class="site-brand-mark" viewBox="0 0 36 40" fill="none" aria-hidden="true"><path d="M5 5h11c12 0 17 6 17 15S28 35 16 35H5V5Z" fill="#a6e6c5"/><path d="M12 12h4c7 0 10 3 10 8s-3 8-10 8h-4V12Z" fill="#002a2c"/><path d="m12 23 6-6 5 6" stroke="#b9f296" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span>dee<span class="brand-wordmark-dot">.</span><small>脚踝恢复实验室</small></span></a>
+<button class="mobile-nav-toggle" data-action="mobile-nav" aria-expanded="false" aria-controls="header-menu" aria-label="展开导航"><span></span><span></span><span></span></button>
+<div class="header-menu" id="header-menu">
+<nav class="header-links" aria-label="产品导航">
+<details class="nav-dropdown"><summary>产品方案 <span aria-hidden="true">⌄</span></summary><div class="nav-dropdown-panel"><button data-action="home-section" data-section="product-pathways">三层服务路径<small>基础复训 · 能力重建 · 重返运动</small></button><a href="#profile">筛查与档案<small>先了解恢复起点</small></a></div></details>
+<details class="nav-dropdown"><summary>功能体验 <span aria-hidden="true">⌄</span></summary><div class="nav-dropdown-panel"><a href="#records">四时点训练记录<small>连接当下与次日反馈</small></a><a href="#motion">小腿提踵观察<small>视频、关键点与观察信息</small></a><a href="#review">人工复核<small>保留判断依据与意见历史</small></a><a href="#report">阶段报告<small>回看每一步的记录</small></a></div></details>
+<details class="nav-dropdown"><summary>了解项目 <span aria-hidden="true">⌄</span></summary><div class="nav-dropdown-panel"><button data-action="home-section" data-section="how-it-works">如何使用<small>从记录到复核的三步流程</small></button><button data-action="home-section" data-section="frequently-asked">常见问题<small>了解本地 Demo 的使用范围</small></button><button data-action="about">项目与开源说明<small>查看当前实现与数据来源</small></button></div></details>
+</nav>
+<div class="header-actions"><a class="header-text-link" href="#report">阶段报告</a><a class="button secondary" href="#profile">我的档案</a><button class="button" data-action="new-record">开始记录</button></div>
+</div></div>
+</header>
+<div class="app-shell">
+<div class="workspace">
+<header class="topbar"><div class="breadcrumb">恢复工作台 <span>/</span> <strong id="breadcrumb-title">总览</strong></div><div class="profile-switch"><label for="profile-select">当前档案</label><select id="profile-select" aria-label="切换当前档案"><option>正在读取…</option></select><button id="new-profile" class="icon-button" aria-label="新建档案" title="新建档案">+</button><span class="avatar">D</span></div></header>
+<nav aria-label="主要功能" id="navigation" class="workbench-nav"></nav>
+<div id="global-error" role="alert" hidden></div>
+<main id="main" tabindex="-1"><div class="loading-state"><span class="spinner"></span>正在加载本地记录…</div></main>
+<footer class="site-footer"><div class="footer-inner"><div><a class="footer-brand" href="#overview">dee<span>.</span></a><p>让恢复过程，<br>留下可以回看的依据。</p><div class="local-indicator"><i></i><span id="connection">连接本机服务…</span></div></div><div class="footer-column"><strong>恢复工作台</strong><a href="#profile">筛查与档案</a><a href="#records">训练记录</a><a href="#motion">提踵观察</a></div><div class="footer-column"><strong>反馈与复核</strong><a href="#review">人工复核</a><a href="#report">阶段报告</a><button data-action="demo-guide">演示路线</button></div><div class="footer-column"><strong>关于 Dee</strong><button id="about-button">关于这个原型</button><button data-action="home-section" data-section="frequently-asked">常见问题</button><span>本机运行 · 数据保存在本机</span></div></div><div class="footer-bottom"><span>© 2026 Dee · 脚踝恢复实验室</span><span>个人项目 Demo · 尚未开展真实用户交付验证</span></div></footer>
+</div></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<dialog id="modal"><button class="modal-close icon-button" aria-label="关闭弹窗">×</button><div id="modal-content"></div></dialog>
+<script src="/landing.js?v=20261028-real-1" defer></script><script src="/app.js?v=20261028-real-1" defer></script>
+</body></html>

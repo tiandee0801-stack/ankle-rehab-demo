@@ -1,0 +1,10 @@
+data/
+artifacts/
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+.DS_Store
+engine/verification/
+*.sqlite3*
